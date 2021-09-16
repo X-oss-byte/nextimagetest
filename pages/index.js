@@ -1,69 +1,95 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import carTallImage from '../images/car-tall.jpg'
+import plantWideImage from '../images/plant-wide.jpg'
+import greenPlantTallImage from '../images/green-plant-tall.jpg'
+import dogWideImage from '../images/dog-wide.jpg'
+import lakeTallImage from '../images/lake-tall.jpg'
+import beachWideImage from '../images/beach-wide.jpg'
+import bridgeTallImage from '../images/bridge-tall.jpg'
+import artWideImage from '../images/art-wide.jpg'
+
+import Image from 'next/image'
 
 export default function Home() {
+  // let link = document.createElement("link")
+  // link.setAttribute("rel", "preload")
+  // link.setAttribute("as", "image")
+  // link.setAttribute("imagesrcset", "/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fimages%2Fcar-tall.da853a5d2e4fee270cb54210de898f59.jpg&w=384&q=75 384w, /_next/image?url=%2F_next%2Fstatic%2Fimage%2Fimages%2Fcar-tall.da853a5d2e4fee270cb54210de898f59.jpg&w=640&q=75 640w, /_next/image?url=%2F_next%2Fstatic%2Fimage%2Fimages%2Fcar-tall.da853a5d2e4fee270cb54210de898f59.jpg&w=750&q=75 750w, /_next/image?url=%2F_next%2Fstatic%2Fimage%2Fimages%2Fcar-tall.da853a5d2e4fee270cb54210de898f59.jpg&w=828&q=75 828w, /_next/image?url=%2F_next%2Fstatic%2Fimage%2Fimages%2Fcar-tall.da853a5d2e4fee270cb54210de898f59.jpg&w=1080&q=75 1080w, /_next/image?url=%2F_next%2Fstatic%2Fimage%2Fimages%2Fcar-tall.da853a5d2e4fee270cb54210de898f59.jpg&w=1200&q=75 1200w, /_next/image?url=%2F_next%2Fstatic%2Fimage%2Fimages%2Fcar-tall.da853a5d2e4fee270cb54210de898f59.jpg&w=1920&q=75 1920w, /_next/image?url=%2F_next%2Fstatic%2Fimage%2Fimages%2Fcar-tall.da853a5d2e4fee270cb54210de898f59.jpg&w=2048&q=75 2048w, /_next/image?url=%2F_next%2Fstatic%2Fimage%2Fimages%2Fcar-tall.da853a5d2e4fee270cb54210de898f59.jpg&w=3840&q=75 3840w")
+  // link.setAttribute("imagesizes", "45vw")
+  // link.setAttribute("data-dyn", "true")
+  // setTimeout(() => {
+  //   document.getElementsByTagName("head")[0].prepend(link)
+  // }, 50)
+
+  //let scriptEl = document.createElement("script")
+  // scriptEl.text = `let link = document.createElement("link")
+  // link.setAttribute("rel", "preload")
+  // link.setAttribute("as", "image")
+  // link.setAttribute("imagesrcset", "/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fimages%2Fcar-tall.da853a5d2e4fee270cb54210de898f59.jpg&w=384&q=75 384w, /_next/image?url=%2F_next%2Fstatic%2Fimage%2Fimages%2Fcar-tall.da853a5d2e4fee270cb54210de898f59.jpg&w=640&q=75 640w, /_next/image?url=%2F_next%2Fstatic%2Fimage%2Fimages%2Fcar-tall.da853a5d2e4fee270cb54210de898f59.jpg&w=750&q=75 750w, /_next/image?url=%2F_next%2Fstatic%2Fimage%2Fimages%2Fcar-tall.da853a5d2e4fee270cb54210de898f59.jpg&w=828&q=75 828w, /_next/image?url=%2F_next%2Fstatic%2Fimage%2Fimages%2Fcar-tall.da853a5d2e4fee270cb54210de898f59.jpg&w=1080&q=75 1080w, /_next/image?url=%2F_next%2Fstatic%2Fimage%2Fimages%2Fcar-tall.da853a5d2e4fee270cb54210de898f59.jpg&w=1200&q=75 1200w, /_next/image?url=%2F_next%2Fstatic%2Fimage%2Fimages%2Fcar-tall.da853a5d2e4fee270cb54210de898f59.jpg&w=1920&q=75 1920w, /_next/image?url=%2F_next%2Fstatic%2Fimage%2Fimages%2Fcar-tall.da853a5d2e4fee270cb54210de898f59.jpg&w=2048&q=75 2048w, /_next/image?url=%2F_next%2Fstatic%2Fimage%2Fimages%2Fcar-tall.da853a5d2e4fee270cb54210de898f59.jpg&w=3840&q=75 3840w")
+  // link.setAttribute("imagesizes", "45vw")
+  // link.setAttribute("data-dyn", "true")
+  // setTimeout(() => {
+  //   document.getElementsByTagName("head")[0].prepend(link)
+  // }, 50)`
+
   return (
     <div className={styles.container}>
+
+      {/* <script dangerouslySetInnerHTML={`let link = document.createElement("link")
+  link.setAttribute("rel", "preload")
+  link.setAttribute("as", "image")
+  link.setAttribute("imagesrcset", "/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fimages%2Fcar-tall.da853a5d2e4fee270cb54210de898f59.jpg&w=384&q=75 384w, /_next/image?url=%2F_next%2Fstatic%2Fimage%2Fimages%2Fcar-tall.da853a5d2e4fee270cb54210de898f59.jpg&w=640&q=75 640w, /_next/image?url=%2F_next%2Fstatic%2Fimage%2Fimages%2Fcar-tall.da853a5d2e4fee270cb54210de898f59.jpg&w=750&q=75 750w, /_next/image?url=%2F_next%2Fstatic%2Fimage%2Fimages%2Fcar-tall.da853a5d2e4fee270cb54210de898f59.jpg&w=828&q=75 828w, /_next/image?url=%2F_next%2Fstatic%2Fimage%2Fimages%2Fcar-tall.da853a5d2e4fee270cb54210de898f59.jpg&w=1080&q=75 1080w, /_next/image?url=%2F_next%2Fstatic%2Fimage%2Fimages%2Fcar-tall.da853a5d2e4fee270cb54210de898f59.jpg&w=1200&q=75 1200w, /_next/image?url=%2F_next%2Fstatic%2Fimage%2Fimages%2Fcar-tall.da853a5d2e4fee270cb54210de898f59.jpg&w=1920&q=75 1920w, /_next/image?url=%2F_next%2Fstatic%2Fimage%2Fimages%2Fcar-tall.da853a5d2e4fee270cb54210de898f59.jpg&w=2048&q=75 2048w, /_next/image?url=%2F_next%2Fstatic%2Fimage%2Fimages%2Fcar-tall.da853a5d2e4fee270cb54210de898f59.jpg&w=3840&q=75 3840w")
+  link.setAttribute("imagesizes", "45vw")
+  link.setAttribute("data-dyn", "true")
+  setTimeout(() => {
+    document.getElementsByTagName("head")[0].prepend(link)
+  }, 50)`}></script> */}
       <Head>
-        <title>Create Next App</title>
+        <title>Sharp image comparison</title>
         <meta name="description" content="Generated by create next app" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <h2 className={styles.title}>
+          My Gallery
+        </h2>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+        <div className="flex-grid">
+          <div className="col">
+            <div className="gal-img">
+              <Image src={carTallImage} priority layout="responsive" placeholder="blur" sizes="45vw" alt="sample image" />
+            </div>
+            <div className="gal-img">
+              <Image src={dogWideImage} layout="responsive" placeholder="blur" sizes="45vw" alt="sample image" />
+            </div>
+            <div className="gal-img">
+              <Image src={lakeTallImage} layout="responsive" placeholder="blur" sizes="45vw" alt="sample image" /> 
+            </div>
+            <div className="gal-img">
+              <Image src={artWideImage} layout="responsive" placeholder="blur" sizes="45vw" alt="sample image" />
+            </div>
+          </div>
+          <div className="col">
+            <div className="gal-img">
+              <Image src={plantWideImage} layout="responsive" placeholder="blur" sizes="45vw" alt="sample image"/>
+            </div>
+            <div className="gal-img">
+              <Image src={greenPlantTallImage} layout="responsive" placeholder="blur" sizes="45vw" alt="sample image" />
+            </div>
+            <div className="gal-img">
+              <Image src={beachWideImage} layout="responsive" placeholder="blur" sizes="45vw" alt="sample image" />
+            </div>
+            <div className="gal-img">
+              <Image src={bridgeTallImage} layout="responsive" placeholder="blur" sizes="45vw" alt="sample image" />
+            </div>
+          </div>
         </div>
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+      
+
     </div>
   )
 }

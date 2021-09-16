@@ -11,6 +11,21 @@ a {
   text-decoration: none;
 }
 
+.flex-grid {
+  display: flex;
+  width:100%
+}
+
+.col {
+  flex: 1;
+  margin: .5rem;
+  position:relative;
+}
+
+.gal-img {
+  padding: .5rem 0 .5rem 0
+}
+
 * {
   box-sizing: border-box;
 }
